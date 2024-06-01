@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Portfolio</title>
+    <style>
+
+        /* Importing Animate.css library for animations */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css');
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+section {
+    padding: 20px;
+    margin: 20px 0;
+    background: rgb(255, 255, 255);
+    border-radius: 50px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.project {
+    margin: 20px 0;
+}
+
+footer {
+    background-color: #333;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 10px 0;
+    border-radius: 30px;
+    bottom: 0;
+    width: 100%;
+    font-size: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+    
+}
+
+label, input, textarea, button {
+    margin: 5px 0;
+    padding: 10px;
+   font-size: 20px;
+    color: rgb(42, 49, 49);
+}
+
+button {
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 20px;
+    width: 50%;
+   margin-left: 100px;
+}
+
+button:hover {
+    transition: 0.5s ease-in-out;
+    border-radius: 30px;
+}
+.link2{
+    text-decoration: none;
+    color: #333;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="animate__animated animate__fadeInDown">AHMED PORTOFOLIO</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">ABOUT ME</a></li>
+                <li><a href="#projects">PROJECTS</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about" class="animate__animated animate__fadeInLeft">
+        <h2>ABOUT ME</h2>
+        <p>Hello! I'm [Ahmed Programmer], a web developer with a passion for creating beautiful and functional websites. Welcome to my portfolio!</p>
+    </section>
+
+    <section id="projects" class="animate__animated animate__fadeInRight">
+        <h2>PROJECTS</h2>
+        <div class="project">
+            <h3>Project 1</h3>
+            <p><a class="link2" href="https://programmerahmed15.github.io/Game-Tic-Tac-Toe/">TIC TAC TAC Game</a></p>
+        </div>
+        <div class="project">
+            <h3>Project 2</h3>
+            <p><a class="link2" href="https://programmerahmed15.github.io/honey-web/">HONEY WEB</a></p>
+        </div>
+        <div class="project">
+            <h3>Project 3</h3>
+            <p><a class="link2" href="https://programmerahmed15.github.io/Chess-Game/">CHESS Game</a></p>
+        </div>
+        <div class="project">
+            <h3>Project 4</h3>
+            <p><a class="link2" href="https://programmerahmed15.github.io/Java-script-Calculator/">CALCULATOR</a></p>
+        </div>
+        
+        
+    </section>
+
+    <section id="contact" class="animate__animated animate__fadeInUp">
+        <h2>CONTACT</h2>
+        <form id="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 My Portfolio. All rights reserved.</p>
+    </footer>
+
+    <script>
+
+document.getElementById('contact-form').addEventListener('submit', function(event) {
+    event.preventDefault();
+    alert('Thank you for your message!');
+    // You can add additional functionality here, such as sending the form data to your email or a server.
+});
+
+    </script>
+</body>
+</html>
